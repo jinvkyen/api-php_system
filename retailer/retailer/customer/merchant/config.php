@@ -11,13 +11,12 @@ define('PAYPAL_CANCEL_URL', 'http://localhost/proj/retailer/customer/merchant/ca
 define('PAYPAL_CURRENCY', 'PhP'); // set your currency here
  
 // Connect with the database
-$db = new mysqli('localhost', 'root', 'jinSQL', 'dbRetailer'); 
+$db = new mysqli('localhost', 'root', '', 'dbRetailer'); 
  
 if ($db->connect_errno) {
     die("Connect failed: ". $db->connect_error);
 }
  
 $gateway = Omnipay::create('PayPal_Rest');
-$gateway->setClientId(CLIENT_ID);
-$gateway->setSecret(CLIENT_SECRET);
+
 $gateway->setTestMode(true); //set it to 'false' when go live
