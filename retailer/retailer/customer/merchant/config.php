@@ -3,12 +3,11 @@ require_once "vendor/autoload.php";
  
 use Omnipay\Omnipay;
  
-define('CLIENT_ID', '');
-define('CLIENT_SECRET', '');
+
  
 define('PAYPAL_RETURN_URL', 'http://localhost/proj/retailer/customer/merchant/success.php');
 define('PAYPAL_CANCEL_URL', 'http://localhost/proj/retailer/customer/merchant/cancel.php');
-define('PAYPAL_CURRENCY', 'PhP'); // set your currency here
+define('PAYPAL_CURRENCY', 'PhP');
  
 // Connect with the database
 $db = new mysqli('localhost', 'root', '', 'dbRetailer'); 
