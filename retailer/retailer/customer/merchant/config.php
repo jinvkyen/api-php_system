@@ -3,8 +3,8 @@ require_once "vendor/autoload.php";
  
 use Omnipay\Omnipay;
  
-define('CLIENT_ID', 'ASCFwUfkajL00dpTV-0Z9uKZ_xfmtI3BEB6Cdeld7kJqH90EDP30nmnlXcTWAp-fbm9dXAcJl5qLar7n');
-define('CLIENT_SECRET', 'EK5P7aNeeIoPQDMVHkziG-q84BBhC8A387saWUQgVy70XlOElo5A8LphhnadNzygEhv8_p2VtFHuN6ee');
+define('CLIENT_ID', '');
+define('CLIENT_SECRET', '');
  
 define('PAYPAL_RETURN_URL', 'http://localhost/proj/retailer/customer/merchant/success.php');
 define('PAYPAL_CANCEL_URL', 'http://localhost/proj/retailer/customer/merchant/cancel.php');
